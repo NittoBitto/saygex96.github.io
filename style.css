@@ -1,0 +1,102 @@
+/* style.css */
+
+body {
+	transition: font-size 0.5s; /* add a transition effect to the body element */
+  }
+  
+  body:hover {
+	font-size: 1.2em; /* increase the font size when the cursor hovers over the body element */
+  }
+body {
+	background-color: #f5f5dc; /* sandy beige */
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #FFA500; /* sunny orange */
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 36px;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+section {
+	background-color: #fff;
+	padding: 20px;
+	margin: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 300px;
+}
+
+h2 {
+	color: #666;
+	margin-top: 0;
+}
+
+article {
+	padding: 20px;
+}
+
+h3 {
+	color: #333;
+	margin-top: 0;
+}
+
+p {
+	color: #666;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+a {
+	color: #337AB7; /* soft blue */
+	text-decoration: none;
+}
+
+a:hover {
+	color: #23527C; /* darker blue */
+}
+
+footer {
+	background-color: #FFA500; /* sunny orange */
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}
+button {
+    background-color: #f5a625; /* cozy orange color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #f5a625; /* darker orange color on hover */
+}
