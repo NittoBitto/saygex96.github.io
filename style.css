@@ -39,6 +39,9 @@ section {
 	width: 300px;
 }
 
+h4 {
+	color: #666;
+}
 h2 {
 	color: #666;
 	margin-top: 0;
@@ -77,7 +80,7 @@ a:hover {
 }
 
 footer {
-	background-color: #FFA500; /* sunny orange */
+	background-color: #ffa500; /* sunny orange */
 	color: #fff;
 	padding: 10px;
 	text-align: center;
@@ -98,5 +101,5 @@ button {
 }
 
 button:hover {
-    background-color: #f5a625; /* darker orange color on hover */
+    background-color: #000000; /* darker orange color on hover */
 }
