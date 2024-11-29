@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <button><a href="blog.html">back</a></button>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+        .answer {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Trợ lý saygex96</h1>
+        <div class="question">
+            <label for="questionInput">Điền thông liên lạc của 1 ai đó muốn hỏi:</label>
+            <input type="text" id="questionInput" placeholder="hỏi thông tin VD: anh trí..." style="width: 100%;">
+        </div>
+        <button onclick="getAnswer()">Get Answer</button>
+        <p class="answer" id="answerOutput"></p>
+    </div>
+
+    <script>
+        function getAnswer() {
+            const question = document.getElementById('questionInput').value.toLowerCase();
+            let answer = '';
+
+            if (question.includes('anh trí')) {
+                answer = 'Số điện thoại: 0945615845, facebook: ??? (nếu biết hãy liên hệ để update).';
+            } else if (question.includes('anh minh')) {
+                answer = 'Số điện thoại: ??? (nếu biết hãy liên hệ để update), tiktok: minhratminh.';
+            } else if (question.includes('anh dương')) {
+                answer = 'Số điện thoại: ??? (nếu biết hãy liên hệ để update), tiktok: doung2jdb.';
+            } else if (question.includes('anh đạt')) {
+                answer = 'Số điện thoại của anh Đạt là ???, tiktok: ??? (dev sẽ không nói).';
+            } else if (question.includes('anh thắng')) {
+                answer = 'sđt:???(nếu biết hãy liên hệ để update), facebook: https://www.facebook.com/share/18FTUhiGqn/?mibextid=LQQJ4d';
+            } else {
+                answer = 'Sorry, I don\'t know the answer to that question.';
+            }
+
+            document.getElementById('answerOutput').innerText = answer;
+        }
+    </script>
+</body>
+</html>
